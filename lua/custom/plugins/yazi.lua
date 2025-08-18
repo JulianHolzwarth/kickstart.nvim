@@ -14,16 +14,16 @@ return {
       --'<cmd>Yazi<cr>',
       --desc = 'Open yazi at the current file',
       --},
-      --{
-      ---- Open in the current working directory
-      --'<leader>o',
-      --'<cmd>Yazi cwd<cr>',
-      --desc = "Open the file manager in nvim's working directory",
-      --},
       {
-        '<leader>oy',
+        -- Open in the current working directory
+        '<leader>oyw',
+        '<cmd>Yazi cwd<cr>',
+        desc = "[O]pen [Y]azi in nvim's [W]orking directory",
+      },
+      {
+        '<leader>oyy',
         '<cmd>Yazi toggle<cr>',
-        desc = 'Open YAZI: Resume the last yazi session',
+        desc = '[O]pen [Y]azi Resume the last [Y]azi session',
       },
     },
     ---@type YaziConfig | {}
