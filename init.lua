@@ -406,6 +406,7 @@ require('lazy').setup({
     'folke/lazydev.nvim',
     ft = 'lua',
     opts = {
+      local_settings = '.luarc.joson',
       library = {
         -- Load luvit types when the `vim.uv` word is found
         { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
